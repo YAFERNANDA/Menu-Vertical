@@ -1,0 +1,53 @@
+body{
+  font-family: sans-serif;
+}
+nav{/* aplicamos un width porque le etiqueta es un tipo bloque*/
+  width: 200px;
+}
+ul{
+  outline: 1px solid yellow;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+li{
+  background: #f5f5f0;
+}
+
+
+a{
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+  display: block;
+}
+/*con una seudo clase me ubico en el primer hijo de la etiqueta ul */
+ul li:first-child{
+  background: #f9a91a;
+  color: white;
+}
+/* cuando este en momento hover cambie de color el fondo del texto*/
+a:hover{
+  background: #e0e0d1;
+}
+/* para que mi backgruond cambie de color
+cuando a este actie */
+
+a:active{
+  background: #333;
+  /* para que en ese momento active el color cambie a blanco*/
+  color: #fff;
+}
+/* para que mi color de texto cambien (esttique a que se encuentre dentro de la etiqueta li )*/
+ul li:first-child a{
+  color:#fff;
+}
+/*cuando el maouse se posiciona sobre el primer item  el color de texto debe ser negro, (me ubico en la etiqueta a, el primer hijo de li y tambien li primer descendiente de ul)*/
+ul li:first-child a:hover{
+color: #000;
+}
+ul li:first-child a:active{
+  color: #fff;
+}
